@@ -135,9 +135,12 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-100 rounded-lg p-8 text-center">
-              <div className="text-8xl mb-4">🔌</div>
-              <p className="text-gray-600">Imagem do produto em alta qualidade</p>
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 text-center shadow-lg">
+              <img 
+                src="/lovable-uploads/b561ccc8-06fd-4d50-a4b8-8efc3d37ed20.png" 
+                alt="Aspirador de Pó Portátil - Pague Somente na Entrega" 
+                className="w-full h-auto max-w-md mx-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
