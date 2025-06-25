@@ -10,10 +10,6 @@ const Index = () => {
     document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleCTAClick = () => {
-    window.open('https://entrega.logzz.com.br/pay/memlq8e3v/skfqj-1-unidade-97', '_blank');
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header com destaques */}
@@ -92,7 +88,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-xl font-bold"
-                onClick={handleCTAClick}
+                onClick={scrollToAction}
               >
                 🚀 Quero Agendar Minha Entrega Agora por R$97,00
               </Button>
@@ -100,7 +96,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg" 
                 className="w-full md:w-auto border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg"
-                onClick={handleCTAClick}
+                onClick={scrollToAction}
               >
                 📦 Agendar com Frete Grátis e Pagamento na Entrega
               </Button>
@@ -139,12 +135,9 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 text-center shadow-lg">
-              <img 
-                src="/lovable-uploads/b561ccc8-06fd-4d50-a4b8-8efc3d37ed20.png" 
-                alt="Aspirador de Pó Portátil - Pague Somente na Entrega" 
-                className="w-full h-auto max-w-md mx-auto rounded-lg"
-              />
+            <div className="bg-gray-100 rounded-lg p-8 text-center">
+              <div className="text-8xl mb-4">🔌</div>
+              <p className="text-gray-600">Imagem do produto em alta qualidade</p>
             </div>
           </div>
         </div>
@@ -254,7 +247,6 @@ const Index = () => {
             <Button 
               size="lg" 
               className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-6 text-xl"
-              onClick={handleCTAClick}
             >
               🚀 Quero Agendar Agora — Só R$97,00
             </Button>
@@ -262,7 +254,6 @@ const Index = () => {
               size="lg" 
               variant="outline" 
               className="w-full border-white text-white hover:bg-white hover:text-green-600 py-6 text-lg"
-              onClick={handleCTAClick}
             >
               📅 Escolher o Dia da Entrega
             </Button>
@@ -270,7 +261,6 @@ const Index = () => {
               size="lg" 
               variant="outline" 
               className="w-full border-white text-white hover:bg-white hover:text-green-600 py-6 text-lg"
-              onClick={handleCTAClick}
             >
               💰 Pagar Só Quando Chegar
             </Button>
