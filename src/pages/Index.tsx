@@ -10,6 +10,10 @@ const Index = () => {
     document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleCTAClick = () => {
+    window.open('https://entrega.logzz.com.br/pay/memlq8e3v/skfqj-1-unidade-97', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header com destaques */}
@@ -88,7 +92,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-xl font-bold"
-                onClick={scrollToAction}
+                onClick={handleCTAClick}
               >
                 🚀 Quero Agendar Minha Entrega Agora por R$97,00
               </Button>
@@ -96,7 +100,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg" 
                 className="w-full md:w-auto border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg"
-                onClick={scrollToAction}
+                onClick={handleCTAClick}
               >
                 📦 Agendar com Frete Grátis e Pagamento na Entrega
               </Button>
@@ -250,6 +254,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-6 text-xl"
+              onClick={handleCTAClick}
             >
               🚀 Quero Agendar Agora — Só R$97,00
             </Button>
@@ -257,6 +262,7 @@ const Index = () => {
               size="lg" 
               variant="outline" 
               className="w-full border-white text-white hover:bg-white hover:text-green-600 py-6 text-lg"
+              onClick={handleCTAClick}
             >
               📅 Escolher o Dia da Entrega
             </Button>
@@ -264,6 +270,7 @@ const Index = () => {
               size="lg" 
               variant="outline" 
               className="w-full border-white text-white hover:bg-white hover:text-green-600 py-6 text-lg"
+              onClick={handleCTAClick}
             >
               💰 Pagar Só Quando Chegar
             </Button>
