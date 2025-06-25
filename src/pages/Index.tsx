@@ -70,13 +70,18 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold mb-8">Veja como funciona:</h3>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-800 rounded-lg p-8 mb-8">
-              <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">▶️</div>
-                  <p className="text-xl">Vídeo do Produto</p>
-                  <p className="text-sm opacity-75">Clique para assistir</p>
-                </div>
+            <div className="bg-gray-800 rounded-lg p-2 mb-8">
+              <div className="aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Aspirador de Pó Portátil - Demonstração"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
             <div className="space-y-4">
