@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -130,12 +129,9 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/7ad4f4ce-8f87-403d-b3bd-3908433da82c.png" 
-                alt="Aspirador de Pó Portátil - Pague somente na entrega, receba em até 24h"
-                className="max-w-full h-auto rounded-lg shadow-lg"
-              />
+            <div className="bg-gray-100 rounded-lg p-8 text-center">
+              <div className="text-8xl mb-4">🔌</div>
+              <p className="text-gray-600">Imagem do produto em alta qualidade</p>
             </div>
           </div>
         </div>
