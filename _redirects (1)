@@ -1,0 +1,2 @@
+# Redireciona qualquer www para domínio principal
+https://www.lojaonexpress.shop/*  https://lojaonexpress.shop/:splat  301!
